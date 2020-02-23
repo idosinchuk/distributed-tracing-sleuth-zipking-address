@@ -24,7 +24,7 @@ public class AddressServiceImpl implements AddressService {
 	@Override
 	public Address getAddress(Integer addressId) {
 
-		log.info("Call addressRepository to obtain Address data by addressId: {}", addressId);
+		log.info("Call to addressRepository to obtain Address data by addressId: {}", addressId);
 		
 		Optional<AddressEntity> addressEntity  = addressRepository.findById(addressId);
 
